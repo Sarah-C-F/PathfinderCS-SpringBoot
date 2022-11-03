@@ -1,0 +1,469 @@
+package dev.farrens.PathfinderCS.Entities;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name= "ClassRace")
+
+public class ClassRace {
+
+    @Id
+    @column(name = "ID")
+    private int Id;
+
+    @column(name = "CRName")
+    private String CRName;
+
+    @column(name = "Strength")
+    private int Strength;
+
+    @column(name = "Dexterity")
+    private int Dexterity;
+
+    @column(name = "Constitution")
+    private int Constitution;
+
+    @column(name = "Intelligence")
+    private int Intelligence;
+
+    @column(name = "Wisdom")
+    private int Wisdom;
+
+    @column(name = "Charisma")
+    private int Charisma;
+
+    @column(name = "Fortitude")
+    private int Fortitude;
+
+    @column(name = "Reflex")
+    private int Reflex;
+
+    @column(name = "Will")
+    private int Will;
+
+    @column(name = "Feats")
+    private int Feats;
+
+    @column(name = "BonusFeats")
+    private int BonusFeats;
+
+    @column(name = "Spells")
+    private int Spells;
+
+    @column(name = "Misc")
+    private String Misc;
+
+    @column(name = "Acrobatics")
+    private int Acrobatics;
+
+    @column(name = "Appraise")
+    private int Appraise;
+
+    @column(name = "Bluff")
+    private int Bluff;
+
+    @column(name = "Climb")
+    private int Climb;
+
+    @column(name = "Craft")
+    private int Craft;
+
+    @column(name = "Diplomacy")
+    private int Diplomacy;
+
+    @column(name = "DisableDevice")
+    private int DisableDevice;
+
+    @column(name = "Disguise")
+    private int Disguise;
+
+    @column(name = "EscapeArtist")
+    private int EscapeArtist;
+
+    @column(name = "Fly")
+    private int Fly;
+
+    @column(name = "HandleAnimal")
+    private int HandleAnimal;
+
+    @column(name = "Heal")
+    private int Heal;
+
+    @column(name = "Intimidate")
+    private int Intimidate;
+
+    @column(name = "KnowArcana")
+    private int KnowArcana;
+
+    @column(name = "KnowDungeoneering")
+    private int KnowDungeoneering;
+
+    @column(name = "KnowEngineering")
+    private int KnowEngineering;
+
+    @column(name = "KnowGeography")
+    private int KnowGeography;
+
+    @column(name = "KnowHistory")
+    private int KnowHistory;
+
+    @column(name = "KnowLocal")
+    private int KnowLocal;
+
+    @column(name = "KnowNature")
+    private int KnowNature;
+
+    @column(name = "KnowNobility")
+    private int KnowNobility;
+
+    @column(name = "KnowPlanes")
+    private int KnowPlanes;
+
+    @column(name = "KnowReligion")
+    private int KnowReligion;
+
+    @column(name = "Linguistics")
+    private int Linguistics;
+
+    @column(name = "Perception")
+    private int Perception;
+
+    @column(name = "Performance")
+    private int Performance;
+
+    @column(name = "Profession")
+    private int Profession;
+
+    @column(name = "Ride")
+    private int Ride;
+
+    @column(name = "SenseMotive")
+    private int SenseMotive;
+
+    @column(name = "SlightOfHand")
+    private int SlightOfHand;
+
+    @column(name = "Spellcraft")
+    private int Spellcraft;
+
+    @column(name = "Stealth")
+    private int Stealth;
+
+    @column(name = "Survival")
+    private int Survival;
+
+    @column(name = "Swim")
+    private int Swim;
+
+    @column(name = "UseMagicDeice")
+    private int UseMagicDevice;
+
+
+    public ClassRace() {
+    }
+
+    public ClassRace
+    (
+    int ID,
+    String CRName,
+    int Strength,
+    int Dexterity,
+    int Constitution,
+    int Intelligence,
+    int Wisdom,
+    int Charisma,
+    int Fortitude, 
+    int Reflex,
+    int Will,
+    int Feats,
+    int BonusFeats,
+    int Spells,
+    String Misc,
+    int Acrobatics,
+    int Appraise,
+    int Bluff,
+    int Climb,
+    int Craft,
+    int Diplomacy,
+    int DisableDevice,
+    int Disguise,
+    int EscapeArtist,
+    int Fly,
+    int HandleAnimal,
+    int Heal,
+    int Intimidate,
+    int KnowArcana,
+    int KnowDungeoneering,
+    int KnowEngineering,
+    int KnowGeography,
+    int KnowHistory,
+    int KnowLocal,
+    int KnowNature, 
+    int KnowNobility,
+    int KnowPlanes,
+    int KnowReligion,
+    int Linguistics,
+    int Perception,
+    int Performance, 
+    int Profession,
+    int Ride,
+    int SenseMotive,
+    int SlightOfHand, 
+    int Spellcraft,
+    int Stealth,
+    int Survival,
+    int Swim,
+    int UseMagicDevice) 
+    {
+    this.ID = ID;
+    this.CRName = CRName;
+    this.Strength = Strength;
+    this.Dexterity = Dexterity;
+    this.Constitution = Constitution;
+    this.Intelligence = Intelligence;
+    this.Wisdom = Wisdom;
+    this.Charisma = Charisma;
+    this.Fortitude = Fortitude;
+    this.Reflex = Reflex;
+    this.Will = Will;
+    this.Feats = Feats;
+    this.BonusFeats = BonusFeats;
+    this.Spells = Spells;
+    this.Misc = Misc;
+    this.Acrobatics = Acrobatics;
+    this.Appraise = Appraise;
+    this.Bluff = Bluff;
+    this.Climb = Climb;
+    this.Craft = Craft;
+    this.Diplomacy = Diplomacy;
+    this.DisableDevice = DisableDevice;
+    this.Disguise = Disguise;
+    this.EscapeArtist = EscapeArtist;
+    this.Fly = Fly;
+    this.HandleAnimal = HandleAnimal;
+    this.Heal = Heal;
+    this.Intimidate = Intimidate;
+    this.KnowArcana = KnowArcana;
+    this.KnowDungeoneering = KnowDungeoneering;
+    this.KnowEngineering = KnowEngineering;
+    this.KnowGeography = KnowGeography;
+    this.KnowHistory = KnowHistory;
+    this.KnowLocal = KnowLocal;
+    this.KnowNature = KnowNature;
+    this.KnowNobility = KnowNobility;
+    this.KnowPlanes = KnowPlanes;
+    this.KnowReligion = KnowReligion;
+    this.Linguistics = Linguistics;
+    this.Perception = Perception;
+    this.Performance = Performance;
+    this.Profession = Profession;
+    this.Ride = Ride;
+    this.SenseMotive = SenseMotive;
+    this.SlightOfHand = SlightOfHand;
+    this.Spellcraft = Spellcraft;
+    this.Stealth = Stealth;
+    this.Survival = Survival;
+    this.Swim = Swim;
+    this.UseMagicDevice = UseMagicDeice;
+    }
+
+    public int getID{
+        return ID;
+    }
+
+    public String getCRName{
+        return CRName;
+    }
+
+    public int getStrength{
+        return Strength;
+    }
+
+    public int getDexterity{
+        return Dexterity;
+    }
+
+    public int getConstitution{
+        return Constitution;
+    }
+
+    public int getIntelligence{
+        return Intelligence;
+    }
+
+    public int getWisdom{
+        return Wisdom;
+    }
+
+    public int getCharisma{
+        return Charisma;
+    }
+
+    public int getFortitude{
+        return Fortitude;
+    }
+
+    public int getReflex{
+        return Reflex;
+    }
+
+    public int getWill{
+        return Will;
+    }
+
+    public int getFeats{
+        return Feats;
+    }
+
+    public int getBonusFeats{
+        return BonusFeats;
+    }
+
+    public int getSpells{
+        return Spells;
+    }
+
+    public String getMisc{
+        return Misc;
+    }
+
+    public int getAcrobatics{
+        return Acrobatics;
+    }
+
+    public int getAppraise{
+        return Appraise;
+    }
+
+    public int getBluff{
+        return Bluff;
+    }
+
+    public int getClimb{
+        return Climb;
+    }
+
+    public int getCraft{
+        return Craft;
+    }
+
+    public int getDiplomacy{
+        return Diplomacy;
+    }
+
+    public int getDisableDevice{
+        return DisableDevice;
+    }
+
+    public int getDisguise{
+        return Disguise;
+    }
+
+    public int getEscapeArtist{
+        return EscapeArtist;
+    }
+
+    public int getFly{
+        return Fly;
+    }
+
+    public int getHandleAnimal{
+        return HandleAnimal;
+    }
+
+    public int getHeal{
+        return Heal;
+    }
+
+    public int getIntimidate{
+        return Intimidate;
+    }
+
+    public int getKnowArcana{
+        return KnowArcana;
+    }
+
+    public int getKnowDungeoneering{
+        return KnowDungeoneering;
+    }
+
+    public int getKnowEngineering{
+        return KnowEngineering;
+    }
+
+    public int getKnowGeography{
+        return KnowGeography;
+    }
+
+    public int getKnowHistory{
+        return KnowHistory;
+    }
+
+    public int getKnowLocal{
+        return KnowLocal;
+    }
+
+    public int getKnowNature{
+        return KnowNature;
+    }
+
+    public int getKnowNobility{
+        return KnowNature;
+    }
+
+    public int getKnowPlanes{
+        return KnowPlanes;
+    }
+
+    public int getKnowReligion{
+        return KnowReligion;
+    }
+
+    public int getLinguistics{
+        return Linguistics;
+    }
+
+    public int getPerception{
+        return Perception;
+    }
+
+    public int getPerformance{
+        return Performance;
+    }
+
+    public int getProfession{
+        return Profession;
+    }
+
+    public int getRide{
+        return Ride;
+    }
+
+    public int getSenseMotive{
+        return SenseMotive;
+    }
+
+    public int getSlightOfHand{
+        return SlightOfHand;
+    }
+
+    public int getSpellcraft{
+        return Spellcraft;
+    }
+
+    public int getStealth{
+        return Stealth;
+    }
+
+    public int getSurvival{
+        return Survival;
+    }
+
+    public int getSwim{
+        return Swim;        
+    }
+
+    public int getUseMagicDevice{
+        return UseMagicDeice;
+    }
+}
